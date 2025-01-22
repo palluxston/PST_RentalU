@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PropertyTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_toEndOf">@+id/house_img</item>
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:hint">Your Hint Here</item>
+    </style>
+</resources>

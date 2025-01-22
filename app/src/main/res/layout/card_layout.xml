@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/propertyCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/house_img"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:padding="50dp" />
+
+        <TextView
+            android:id="@+id/list_num"
+            style="@style/PropertyTextView"
+            android:hint="Listing Reference Number"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/property_type"
+            style="@style/PropertyTextView"
+            android:hint="Property Type"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/bedrooms"
+            style="@style/PropertyTextView"
+            android:hint="Bedrooms"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/date_Time"
+            style="@style/PropertyTextView"
+            android:hint="Date and Time"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/rent_Price"
+            style="@style/PropertyTextView"
+            android:hint="Monthly Rent Price"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/Furniture"
+            style="@style/PropertyTextView"
+            android:hint="Furniture Status"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/Remark"
+            style="@style/PropertyTextView"
+            android:hint="Remarks"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/reporter_Name"
+            style="@style/PropertyTextView"
+            android:hint="Name of the Reporter" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

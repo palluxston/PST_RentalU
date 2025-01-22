@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_add_post"
+            android:icon="@drawable/ic_plus"
+            android:title="Add Post"
+            android:visible="false"
+            app:itemTextColor="@color/color4"/>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            app:itemTextColor="@color/color4"/>
+
+        <item
+            android:id="@+id/nav_newsfeed"
+            android:icon="@drawable/ic_newsfeed"
+            android:title="Newsfeed"
+            app:itemTextColor="@color/color4"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_username_icon"
+            android:title="Profile"
+            app:itemTextColor="@color/color4"/>
+
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:icon="@drawable/ic_settings"
+            app:itemTextColor="@color/color4"
+            />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About Us"
+            app:itemTextColor="@color/color4"/>
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out"
+            
+            app:itemTextColor="@color/color4"/>
+    </group>
+
+</menu>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_background"
+            app:titleEnabled="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold_italic"
+                android:includeFontPadding="false"
+                android:text="Settings"
+                android:textColor="@color/color4"
+                android:textFontWeight="600"
+                android:textSize="30dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="English"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/music_status_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Music Status"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="16dp" />
+
+                <Switch
+                    android:id="@+id/music_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Turn Music On/Off"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txt_music_track_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Music Track"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/soundtrack_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soundtrack: 1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/progressTextMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes Playing"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <!-- SeekBar for changing soundtracks -->
+                <SeekBar
+                    android:id="@+id/soundtrack_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/prev_soundtrack_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:src="@drawable/ic_pre"
+                        android:layout_marginStart="20dp"/>
+
+                    <ImageButton
+                    android:id="@+id/play_soundtrack_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"
+                    android:src="@drawable/ic_play"
+                    android:layout_marginStart="20dp"/>
+
+                    <ImageButton
+                        android:id="@+id/next_soundtrack_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:src="@drawable/ic_next"
+                        android:layout_marginStart="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/app_developer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By PST"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="383dp"
+            android:layout_height="192dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navdrawer_header"
+        app:itemIconTint="@color/color4"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/nav_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_fully_furnished"
+        android:title="Fully Furnished"/>
+    <item
+        android:id="@+id/menu_partially_furnished"
+        android:title="Partially Furnished"/>
+    <item
+        android:id="@+id/menu_non_furnished"
+        android:title="Non-Furnished"/>
+</menu>
